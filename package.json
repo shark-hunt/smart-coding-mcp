@@ -1,0 +1,63 @@
+{
+  "name": "smart-coding-mcp",
+  "version": "2.3.3",
+  "description": "An extensible MCP server that enhances coding productivity with AI-powered features including semantic code search, intelligent indexing, and more, using local LLMs",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "smart-coding-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clear-cache": "node scripts/clear-cache.js"
+  },
+  "keywords": [
+    "mcp",
+    "semantic-search",
+    "code-search",
+    "embeddings",
+    "ai",
+    "model-context-protocol",
+    "hybrid-search",
+    "code-intelligence",
+    "cursor",
+    "vscode",
+    "claude",
+    "codex",
+    "openai",
+    "gemini",
+    "anthropic"
+  ],
+  "author": {
+    "name": "Omar Haris",
+    "url": "https://www.linkedin.com/in/omarharis/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omar-haris/smart-coding-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omar-haris/smart-coding-mcp/issues"
+  },
+  "homepage": "https://github.com/omar-haris/smart-coding-mcp#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^12.5.0",
+    "chokidar": "^3.5.3",
+    "fastembed": "^2.1.0",
+    "fdir": "^6.5.0",
+    "glob": "^10.3.10",
+    "web-tree-sitter": "^0.24.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.16"
+  }
+}
